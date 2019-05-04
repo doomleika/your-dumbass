@@ -1,45 +1,60 @@
-# electron-quick-start
+# Dumbass
 
-**Clone and run for a quick way to see Electron in action.**
+這位老兄原本指控用 process monitor 看的
 
-This is a minimal Electron application based on the [Quick Start Guide](https://electronjs.org/docs/tutorial/quick-start) within the Electron documentation.
+![這位老兄原本指控用 process monitor 看的](https://github.com/doomleika/your-dumbass/blob/master/img/the-idiot-zero.jpeg)
 
-**Use this app along with the [Electron API Demos](https://electronjs.org/#get-started) app for API code examples to help you get started.**
+這邊有一位電腦高手認為 electron 不會看憑證
 
-A basic Electron application needs just these files:
+![u wot?](https://github.com/doomleika/your-dumbass/blob/master/img/u-wot1.png)
 
-- `package.json` - Points to the app's main file and lists its details and dependencies.
-- `main.js` - Starts the app and creates a browser window to render HTML. This is the app's **main process**.
-- `index.html` - A web page to render. This is the app's **renderer process**.
+![u wot2?](https://github.com/doomleika/your-dumbass/blob/master/img/u-wot2.png)
 
-You can learn more about each of these components within the [Quick Start Guide](https://electronjs.org/docs/tutorial/quick-start).
+## 呵
 
-## To Use
+示範給你看，code是直接從[官方 electron 範例](https://github.com/electron/electron-quick-start) clone 過來的
 
-To clone and run this repository you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
+打開 [process monitor](https://docs.microsoft.com/en-us/sysinternals/downloads/procmon)
+
+設定filter
+
+* `Process Name` __is__ `electron.exe`
+* `path` __containers__ `Certificates`
+
+![filter](https://github.com/doomleika/your-dumbass/blob/master/img/filters.png)
 
 ```bash
-# Clone this repository
-git clone https://github.com/electron/electron-quick-start
-# Go into the repository
-cd electron-quick-start
-# Install dependencies
 npm install
-# Run the app
 npm start
 ```
 
-Note: If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
+體會一下自己計算機概論是怎麼pass的
 
-## Resources for Learning Electron
+![electron](https://github.com/doomleika/your-dumbass/blob/master/img/electrion-cert.png)
 
-- [electronjs.org/docs](https://electronjs.org/docs) - all of Electron's documentation
-- [electronjs.org/community#boilerplates](https://electronjs.org/community#boilerplates) - sample starter apps created by the community
-- [electron/electron-quick-start](https://github.com/electron/electron-quick-start) - a very basic starter Electron app
-- [electron/simple-samples](https://github.com/electron/simple-samples) - small applications with ideas for taking them further
-- [electron/electron-api-demos](https://github.com/electron/electron-api-demos) - an Electron app that teaches you how to use Electron
-- [hokein/electron-sample-apps](https://github.com/hokein/electron-sample-apps) - small demo apps for the various Electron APIs
+Epic Game Launcher是長這樣
 
-## License
+![egl](https://github.com/doomleika/your-dumbass/blob/master/img/egl.png)
 
-[CC0 1.0 (Public Domain)](LICENSE.md)
+
+弱弱問一下問差別在哪?
+
+不要跟我說 `mainWindow.loadFile('index.html')` 換成 `mainWindow.loadURL('https://github.com')` 不算數，難道EGL到它們的Server不用 `HTTPS` 連線敢情是用小叮噹任意門來著?
+
+## 順便讓你看一下別的 launcher 會怎麼樣
+
+### steam
+
+![steam](https://github.com/doomleika/your-dumbass/blob/master/img/steam.png)
+
+
+### Uplay
+
+![uplay](https://github.com/doomleika/your-dumbass/blob/master/img/uplay.png)
+
+
+只要是要HTTPS連線，一定會用到憑證。
+
+## 送你一句
+
+[![shut up](https://github.com/doomleika/your-dumbass/blob/master/img/have-a-nice-big-cup-of-shut-the-fuck-up.png)](https://www.reddit.com/r/PhoenixPoint/comments/b0rxdq/epic_game_store_spyware_tracking_and_you/eikhtip?utm_source=share&utm_medium=web2x)
